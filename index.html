@@ -2,231 +2,401 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fifa World Cup 2022</title>
+  <meta name="description" content="FIFA World Cup Qatar 2022 - Official website with stadiums, results, and statistics">
+  <meta name="keywords" content="FIFA, World Cup, Qatar 2022, football, soccer, stadiums">
+  <title>FIFA World Cup Qatar 2022</title>
+  
   <!-- CSS Style File -->
-  <link rel="stylesheet" href="./css/Style.css">
+  <link rel="stylesheet" href="./css/style.css">
+  
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Jomhuria&family=Licorice&family=Open+Sans:ital,wght@1,300&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <!-- Start Header  -->
-  <header>
-    <div class="container">
-        <a href="#" class="logo">
-            <img src="./Images/2022-fifa-world-cup-logo-vector-41515084-removebg-preview.png" alt="">
+  <!-- Skip to main content for accessibility -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Header Navigation -->
+  <header class="header" role="banner">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="container">
+        <a href="#" class="logo" aria-label="FIFA World Cup Qatar 2022">
+          <img src="./Images/2022-fifa-world-cup-logo-vector-41515084-removebg-preview.png" alt="FIFA World Cup Qatar 2022 Logo">
         </a>
-        <nav>
-          <ul>
-              <li><a class="active" href="#">Home</a></li>
-              <li><a href="#Stadiums">Stadiums</a></li>
-              <li><a href="#Results">Results</a></li>
-              <li><a href="#Statistics">Statistics</a></li>
-          </ul>
-        </nav>
-    </div>
+        
+        <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+        </button>
+
+        <ul class="nav-menu" role="menubar">
+          <li role="none"><a href="#" class="nav-link active" role="menuitem" aria-current="page">Home</a></li>
+          <li role="none"><a href="#stadiums" class="nav-link" role="menuitem">Stadiums</a></li>
+          <li role="none"><a href="#results" class="nav-link" role="menuitem">Results</a></li>
+          <li role="none"><a href="#statistics" class="nav-link" role="menuitem">Statistics</a></li>
+        </ul>
+      </div>
+    </nav>
   </header>
-  <!-- End Header  -->
 
-  <!-- Start landing -->
-  <div class="landing">
-    <div class="overlay"></div>
-    <div class="text">
-      <div class="content">
-        <h2>Welcome To<br />
-            World Cup Fifa <br> Qatar 2022
-        </h2>
-        <p>The FIFA World Cup Qatar 2022™ will be played from 20 November to 18 December. 32 teams will compete across 64 matches in the 22nd edition.
+  <!-- Main Content -->
+  <main id="main">
+    <!-- Hero Section -->
+    <section class="hero" aria-label="Welcome to FIFA World Cup Qatar 2022">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="container">
+          <div class="hero-text">
+            <div class="hero-info">
+              <h1 class="hero-title">
+                Welcome To<br />
+                <span class="highlight">FIFA World Cup</span><br>
+                <span class="highlight">Qatar 2022</span>
+              </h1>
+              <p class="hero-description">
+                The FIFA World Cup Qatar 2022™ was played from 20 November to 18 December. 
+                32 teams competed across 64 matches in the 22nd edition of the world's most prestigious tournament.
+              </p>
+              <div class="hero-stats">
+                <div class="stat-item">
+                  <span class="stat-number">32</span>
+                  <span class="stat-label">Teams</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">64</span>
+                  <span class="stat-label">Matches</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">8</span>
+                  <span class="stat-label">Stadiums</span>
+                </div>
+              </div>
+            </div>
+            <div class="hero-mascot">
+              <img src="./Images/mascot.png" alt="La'eeb - FIFA World Cup Qatar 2022 Mascot">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stadiums Section -->
+    <section id="stadiums" class="stadiums" aria-label="World Cup Stadiums">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">Stadiums</h2>
+          <p class="section-description">
+            The 64 matches of the FIFA World Cup 2022 tournament were organized in 8 magnificent football stadiums across Qatar
           </p>
+        </header>
+
+        <div class="stadiums-grid">
+          <article class="stadium-card">
+            <div class="stadium-image">
+              <img src="./Images/lusail stadium.jpg" alt="Lusail Stadium - The iconic venue for the World Cup final">
+            </div>
+            <div class="stadium-info">
+              <h3 class="stadium-name">Lusail Stadium</h3>
+              <p class="stadium-capacity">
+                <i class="fas fa-users" aria-hidden="true"></i>
+                Capacity: 88,966
+              </p>
+              <p class="stadium-description">The crown jewel of Qatar 2022, hosting the opening ceremony and final match.</p>
+            </div>
+          </article>
+
+          <article class="stadium-card">
+            <div class="stadium-image">
+              <img src="./Images/khalifa stadium.jpg" alt="Khalifa Stadium - Historic venue with modern renovations">
+            </div>
+            <div class="stadium-info">
+              <h3 class="stadium-name">Khalifa Stadium</h3>
+              <p class="stadium-capacity">
+                <i class="fas fa-users" aria-hidden="true"></i>
+                Capacity: 45,857
+              </p>
+              <p class="stadium-description">Qatar's oldest stadium, beautifully renovated for the tournament.</p>
+            </div>
+          </article>
+
+          <article class="stadium-card">
+            <div class="stadium-image">
+              <img src="./Images/al janoup stadium.jpg" alt="Al Janoub Stadium - Designed by Zaha Hadid">
+            </div>
+            <div class="stadium-info">
+              <h3 class="stadium-name">Al Janoub Stadium</h3>
+              <p class="stadium-capacity">
+                <i class="fas fa-users" aria-hidden="true"></i>
+                Capacity: 44,325
+              </p>
+              <p class="stadium-description">Inspired by traditional dhow boats, designed by Zaha Hadid.</p>
+            </div>
+          </article>
+
+          <article class="stadium-card">
+            <div class="stadium-image">
+              <img src="./Images/education city stadium.jpg" alt="Education City Stadium - The Diamond of the Desert">
+            </div>
+            <div class="stadium-info">
+              <h3 class="stadium-name">Education City Stadium</h3>
+              <p class="stadium-capacity">
+                <i class="fas fa-users" aria-hidden="true"></i>
+                Capacity: 44,667
+              </p>
+              <p class="stadium-description">Known as the "Diamond of the Desert" for its stunning facade.</p>
+            </div>
+          </article>
+
+          <article class="stadium-card">
+            <div class="stadium-image">
+              <img src="./Images/ahmed bin ali stadium.jpg" alt="Ahmad bin Ali Stadium - Built with sustainable materials">
+            </div>
+            <div class="stadium-info">
+              <h3 class="stadium-name">Ahmad bin Ali Stadium</h3>
+              <p class="stadium-capacity">
+                <i class="fas fa-users" aria-hidden="true"></i>
+                Capacity: 45,032
+              </p>
+              <p class="stadium-description">Built using materials from the demolished old stadium.</p>
+            </div>
+          </article>
+
+          <article class="stadium-card">
+            <div class="stadium-image">
+              <img src="./Images/albayt stadium.jpg" alt="Al Bayt Stadium - Inspired by traditional Bedouin tents">
+            </div>
+            <div class="stadium-info">
+              <h3 class="stadium-name">Al Bayt Stadium</h3>
+              <p class="stadium-capacity">
+                <i class="fas fa-users" aria-hidden="true"></i>
+                Capacity: 68,895
+              </p>
+              <p class="stadium-description">Designed to resemble a traditional Bedouin tent.</p>
+            </div>
+          </article>
+
+          <article class="stadium-card">
+            <div class="stadium-image">
+              <img src="./Images/thumama stadium.jpg" alt="Al Thumama Stadium - Inspired by the gahfiya cap">
+            </div>
+            <div class="stadium-info">
+              <h3 class="stadium-name">Al Thumama Stadium</h3>
+              <p class="stadium-capacity">
+                <i class="fas fa-users" aria-hidden="true"></i>
+                Capacity: 44,400
+              </p>
+              <p class="stadium-description">Design inspired by the gahfiya, a traditional woven cap.</p>
+            </div>
+          </article>
+
+          <article class="stadium-card">
+            <div class="stadium-image">
+              <img src="./Images/974 stadium.jpg" alt="Stadium 974 - Made from shipping containers">
+            </div>
+            <div class="stadium-info">
+              <h3 class="stadium-name">Stadium 974</h3>
+              <p class="stadium-capacity">
+                <i class="fas fa-users" aria-hidden="true"></i>
+                Capacity: 44,089
+              </p>
+              <p class="stadium-description">Unique stadium built entirely from shipping containers.</p>
+            </div>
+          </article>
+        </div>
       </div>
-      <div class="laeeb"><img src="./Images/mascot.png" alt=""></div>
-    </div>
-  </div>
-  <!-- End landing -->
-  <!-- Start Stadiums -->
-  <div class="stadiums" id="Stadiums">
+    </section>
+
+    <!-- Results Section -->
+    <section id="results" class="results" aria-label="Tournament Results">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">Final Results</h2>
+          <p class="section-description">The historic conclusion of the FIFA World Cup Qatar 2022</p>
+        </header>
+        
+        <div class="results-content">
+          <div class="final-result">
+            <div class="team argentina">
+              <img src="./Images/ARG.jpg" alt="Argentina flag" class="team-flag">
+              <span class="team-name">Argentina</span>
+            </div>
+            <div class="match-score">
+              <span class="score">3 - 3</span>
+              <span class="penalty">(4-2 on penalties)</span>
+              <span class="match-info">Final • Lusail Stadium</span>
+            </div>
+            <div class="team france">
+              <span class="team-name">France</span>
+              <img src="./Images/FRA.jpg" alt="France flag" class="team-flag">
+            </div>
+          </div>
+          
+          <div class="tournament-bracket">
+            <img src="./Images/Capture.PNG" alt="FIFA World Cup 2022 Tournament Bracket">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section id="statistics" class="statistics" aria-label="Tournament Statistics">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">Tournament Statistics</h2>
+          <p class="section-description">Top performers from the FIFA World Cup Qatar 2022</p>
+        </header>
+
+        <div class="stats-grid">
+          <div class="stat-category">
+            <h3 class="category-title">
+              <i class="fas fa-futbol" aria-hidden="true"></i>
+              Top Scorers
+            </h3>
+            <div class="player-stats">
+              <div class="player-card gold">
+                <div class="player-rank">1</div>
+                <img src="./Images/FRA.jpg" alt="France flag" class="flag">
+                <img src="./Images/mbappe.jpg" alt="Kylian Mbappé" class="player-photo">
+                <div class="player-info">
+                  <span class="player-name">Kylian Mbappé</span>
+                  <span class="player-country">France</span>
+                </div>
+                <div class="stat-value">8 Goals</div>
+              </div>
+
+              <div class="player-card silver">
+                <div class="player-rank">2</div>
+                <img src="./Images/ARG.jpg" alt="Argentina flag" class="flag">
+                <img src="./Images/messi.jpg" alt="Lionel Messi" class="player-photo">
+                <div class="player-info">
+                  <span class="player-name">Lionel Messi</span>
+                  <span class="player-country">Argentina</span>
+                </div>
+                <div class="stat-value">7 Goals</div>
+              </div>
+
+              <div class="player-card bronze">
+                <div class="player-rank">3</div>
+                <img src="./Images/ARG.jpg" alt="Argentina flag" class="flag">
+                <img src="./Images/alvarez.jpg" alt="Julián Álvarez" class="player-photo">
+                <div class="player-info">
+                  <span class="player-name">Julián Álvarez</span>
+                  <span class="player-country">Argentina</span>
+                </div>
+                <div class="stat-value">4 Goals</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="stat-category">
+            <h3 class="category-title">
+              <i class="fas fa-hands-helping" aria-hidden="true"></i>
+              Top Assists
+            </h3>
+            <div class="player-stats">
+              <div class="player-card gold">
+                <div class="player-rank">1</div>
+                <img src="./Images/ARG.jpg" alt="Argentina flag" class="flag">
+                <img src="./Images/messi.jpg" alt="Lionel Messi" class="player-photo">
+                <div class="player-info">
+                  <span class="player-name">Lionel Messi</span>
+                  <span class="player-country">Argentina</span>
+                </div>
+                <div class="stat-value">3 Assists</div>
+              </div>
+
+              <div class="player-card silver">
+                <div class="player-rank">2</div>
+                <img src="./Images/FRA.jpg" alt="France flag" class="flag">
+                <img src="./Images/grezman.jpg" alt="Antoine Griezmann" class="player-photo">
+                <div class="player-info">
+                  <span class="player-name">Antoine Griezmann</span>
+                  <span class="player-country">France</span>
+                </div>
+                <div class="stat-value">3 Assists</div>
+              </div>
+
+              <div class="player-card bronze">
+                <div class="player-rank">3</div>
+                <img src="./Images/CRO.jpg" alt="Croatia flag" class="flag">
+                <img src="./Images/presic.jpg" alt="Ivan Perišić" class="player-photo">
+                <div class="player-info">
+                  <span class="player-name">Ivan Perišić</span>
+                  <span class="player-country">Croatia</span>
+                </div>
+                <div class="stat-value">3 Assists</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
     <div class="container">
-        <div class="main-heading">
-            <h2>Stadiums</h2>
-            <p>The 64 matches of the FIFA World Cup 2022 <br> tournament will be organized in 8 football stadiums in Qatar</p>
-        </div>
-        <div class="stadiums-content">
-            <hr>
-            <div class="stad-box">
-              <div class="stad-img">
-                <img src="./Images/lusail stadium.jpg" alt="">
-              </div>
-              <div class="text">
-                <h3>Lusail Stadium</h3>
-                <p>
-                  Capacity: 88,966
-                </p>
-              </div>
-            </div>
-            <hr>
-            <div class="stad-box">
-              <div class="stad-img">
-                <img src="./Images/khalifa stadium.jpg" alt="">
-              </div>
-              <div class="text">
-                <h3>Khalifa Stadium</h3>
-                <p>
-                  Capacity: 45,857
-                </p>
-              </div>
-            </div>
-            <hr>
-            <div class="stad-box">
-              <div class="stad-img">
-                <img src="./Images/al janoup stadium.jpg" alt="">
-              </div>
-              <div class="text">
-                <h3>AlJanoup Stadium</h3>
-                <p>
-                  Capacity: 44,325
-                </p>
-              </div>
-            </div>
-            <hr>
-            <div class="stad-box">
-              <div class="stad-img">
-                <img src="./Images/education city stadium.jpg" alt="">
-              </div>
-              <div class="text">
-                <h3>Education City Stadium</h3>
-                <p>
-                  Capacity: 44,667
-                </p>
-              </div>
-            </div>
-            <hr>
-            <div class="stad-box">
-              <div class="stad-img">
-                <img src="./Images/ahmed bin ali stadium.jpg" alt="">
-              </div>
-              <div class="text">
-                <h3>Ahmed Bin Ali Stadium</h3>
-                <p>
-                  Capacity: 45,032
-                </p>
-              </div>
-            </div>
-            <hr>
-            <div class="stad-box">
-              <div class="stad-img">
-                <img src="./Images/albayt stadium.jpg" alt="">
-              </div>
-              <div class="text">
-                <h3>AlBayet Stadium</h3>
-                <p>
-                  Capacity: 68,895
-                </p>
-              </div>
-            </div>
-            <hr>
-            <div class="stad-box">
-              <div class="stad-img">
-                <img src="./Images/thumama stadium.jpg" alt="">
-              </div>
-              <div class="text">
-                <h3>AlThumama Stadium</h3>
-                <p>
-                  Capacity: 44,400
-                </p>
-              </div>
-            </div>
-            <hr>
-            <div class="stad-box">
-              <div class="stad-img">
-                <img src="./Images/974 stadium.jpg" alt="">
-              </div>
-              <div class="text">
-                <h3>974 Stadium</h3>
-                <p>
-                  Capacity: 44,089
-                </p>
-              </div>
-            </div>
-            <hr>
-        </div>
+      <p>&copy; 2024 FIFA World Cup Qatar 2022. All rights reserved.</p>
     </div>
-  </div>
-  <!-- End Stadiums -->
+  </footer>
 
-    <!-- Start Results -->
-    <div class="results" id="Results">
-      <div class="container">
-        <div class="main-heading">
-          <h2>Results</h2>
-        </div>
-        <div class="result-img">
-          <img src="./Images/Capture.PNG" alt="">
-        </div>
-      </div>
-    </div>
-    <!-- End Results -->
-    <!-- Start Statistics -->
-    <div class="statistics" id="Statistics">
-      <div class="container">
-        <div class="main-heading">
-          <h2>Statistics</h2>
-        </div>
+  <!-- JavaScript for mobile menu and smooth scrolling -->
+  <script>
+    // Mobile menu toggle
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const navMenu = document.querySelector('.nav-menu');
 
-        <div class="top-score">
-          <h3>Top scorer</h3>
-          <div class="scorer">
-            <img class="flag" src="./Images/FRA.jpg" alt="">
-            <p class="country">FRA</p>
-            <img class="player" src="./Images/mbappe.jpg" alt="">
-            <p class="name">Kylian Mbappe</p>
-            <p class="goal">8</p>
-          </div>
-          <div class="scorer">
-            <img class="flag" src="./Images/ARG.jpg" alt="">
-            <p class="country">ARG</p>
-            <img class="player" src="./Images/messi.jpg" alt="">
-            <p class="name">Lionel Messi</p>
-            <p class="goal">7</p>
-          </div>
-          <div class="scorer">
-            <img class="flag" src="./Images/ARG.jpg" alt="">
-            <p class="country">ARG</p>
-            <img class="player" src="./Images/alvarez.jpg" alt="">
-            <p class="name">Julian Alvarez</p>
-            <p class="goal">4</p>
-          </div>
-        </div>
+    mobileMenuToggle.addEventListener('click', () => {
+      const isOpen = navMenu.classList.toggle('active');
+      mobileMenuToggle.setAttribute('aria-expanded', isOpen);
+    });
 
-        <div class="top-assist">
-          <h3>Top Assister</h3>
-          <div class="scorer">
-            <img class="flag" src="./Images/ARG.jpg" alt="">
-            <p class="country">ARG</p>
-            <img class="player" src="./Images/messi.jpg" alt="">
-            <p class="name">Lionel Messi</p>
-            <p class="goal">3</p>
-          </div>
-          <div class="scorer">
-            <img class="flag" src="./Images/FRA.jpg" alt="">
-            <p class="country">FRA</p>
-            <img class="player" src="./Images/grezman.jpg" alt="">
-            <p class="name">Antoine Griezmann</p>
-            <p class="goal">3</p>
-          </div>
-          <div class="scorer">
-            <img class="flag" src="./Images/CRO.jpg" alt="">
-            <p class="country">CRO</p>
-            <img class="player" src="./Images/presic.jpg" alt="">
-            <p class="name">Ivan Perišić</p>
-            <p class="goal">3</p>
-          </div>
-        </div>
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+          
+          // Close mobile menu if open
+          navMenu.classList.remove('active');
+          mobileMenuToggle.setAttribute('aria-expanded', false);
+        }
+      });
+    });
 
-      </div>
-    </div>
-    <!-- End Statistics -->
+    // Update active navigation link on scroll
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (scrollY >= (sectionTop - 200)) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
